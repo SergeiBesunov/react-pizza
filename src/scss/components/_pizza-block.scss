@@ -1,0 +1,146 @@
+@import '../variables';
+
+.pizza-block {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    margin-bottom: 20px;
+    flex: 1 0 auto;
+  }
+
+  &__selector {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 6px;
+
+    ul {
+      display: flex;
+      flex: 1;
+
+      &:first-of-type {
+        margin-bottom: 6px;
+      }
+
+      li {
+        padding: 8px;
+        flex: 1;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        @include noselect();
+        &.active {
+          background: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          border-radius: 5px;
+          cursor: auto;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+  }
+}
+
+.pizza-loading{
+  width: 25%;
+  min-height: 300px;
+  text-align: center;
+}
+
+// --------------------------------------------------------
+@media(max-width: 1500px){
+  .pizza-block {
+    width: 33.33%;
+      padding: 20px 30px;
+  }
+
+  .pizza-loading{
+    width: 33.33%;
+  }
+}
+
+
+@media(max-width: 1100px){
+  .pizza-block {
+    width: 50%;
+      padding: 0px 50px;
+  }
+
+  .pizza-loading{
+    width: 50%;
+  }
+}
+
+
+@media(max-width: 1000px){
+  .pizza-block {
+      padding: 0px 30px;
+  }
+}
+
+@media(max-width: 800px){
+  .pizza-block {
+      padding: 0px 20px;
+  }
+}
+
+@media(max-width: 800px){
+  .pizza-block {
+    width: 100%;
+      padding: 0px 60px;
+
+      &__image {
+        width: 80%;
+        margin: 0 auto;
+      }
+  }
+
+  .pizza-loading{
+    width: 100%;
+  }
+}
+
+@media(max-width: 550px){
+  .pizza-block {
+      padding: 0px 10px;
+  }
+}
+
+@media(max-width: 400px){
+  .pizza-block {
+      padding: 0px 0px;
+
+      &__price {
+        font-size: 18px;
+        line-height: 22px;
+      }
+  }
+}

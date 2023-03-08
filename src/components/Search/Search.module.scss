@@ -1,0 +1,32 @@
+.root{
+   
+    position: relative;
+   
+
+    @media(max-width: 1050px){
+        height: 0;
+        width: 0;
+        padding: 0;
+        visibility: 0;
+        opacity: 0;
+    }
+}
+
+.input{
+    border: 1px solid rgb(228, 228, 228);
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.closeImg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    
+    cursor: pointer;
+}

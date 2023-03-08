@@ -1,0 +1,35 @@
+.root {
+
+   width: 100%;
+
+   ul{
+      display: flex;
+      flex-wrap: wrap;
+      li {
+         margin: 5px 6px 0px 6px;
+   
+         button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: #fe5f1e;
+            border: 1px solid #fe5f1e;
+            font-size: 16px;
+            font-weight: 800;
+            background-color: transparent;
+   
+            &:hover {
+               background-color: #fe5f1e;
+               color: #fff;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+  
+
+   .active {
+      background-color: #fe5f1e;
+      color: #fff;
+   }
+}
